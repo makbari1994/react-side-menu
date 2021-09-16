@@ -19,7 +19,9 @@
   box-shadow: -2px 0 4px rgba(0,0,0,0.2);
   z-index: 100000000;
   overflow: auto;
+  -webkit-overflow-scrolling: touch;
 
+  /* touch-action: pan-y !important; */
 }
 .akbar_back_drop{
   width: 100%;

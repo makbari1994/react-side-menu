@@ -34,6 +34,9 @@ class App extends React.Component {
 
       <div>
 
+      
+
+
         <div className="center">
           
           <button type="button" className="left" onClick={this.openLeft.bind(this)} >open left menu</button>
@@ -46,7 +49,8 @@ class App extends React.Component {
 
         <AkbariSideMenu
           ref={this.sideRightRef}
-          width={80}
+          pcWidth={50}
+          mobileWidth={80}
           onClose={this.onClose.bind(this)}
           onOpen={this.onOpen.bind(this)}
           direction={'rtl'}
@@ -74,7 +78,7 @@ class App extends React.Component {
 
         <AkbariSideMenu
           ref={this.sideLeftRef}
-          width={80}
+
           onClose={this.onClose.bind(this)}
           onOpen={this.onOpen.bind(this)}
           direction={'ltr'}

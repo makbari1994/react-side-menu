@@ -1,6 +1,6 @@
 {
-  "name": "react-side-menu",
-  "version": "1.0.0",
+  "name": "akbari-side-menu",
+  "version": "2.0.1",
   "description": "Made with create-react-library",
   "author": "makbari1994",
   "license": "MIT",
@@ -52,5 +52,13 @@
   ],
   "dependencies": {
     "hammerjs": "^2.0.8"
-  }
+  },
+  "keywords": [
+    "react",
+    "side-menu",
+    "react-side-menu",
+    "javascript",
+    "js",
+    "reactjs"
+  ]
 }
