@@ -28,8 +28,8 @@ export class AkbariSideMenu extends React.Component {
     //  this.onScroll();
   }
   componentDidMount() {
-        this.config();
-        this.onResize();
+    this.config();
+    this.onResize();
   }
 
   onResize() {
@@ -100,12 +100,6 @@ export class AkbariSideMenu extends React.Component {
 
 
     setTimeout(() => {
-
-
-
-
-
-
       this.ref = this.sideRef.current;
 
       this.hammerRef = new Hammer(this.ref, {
@@ -116,9 +110,6 @@ export class AkbariSideMenu extends React.Component {
       // this.hammerRef.get('rotate').set({ enable : true })
       // this.hammerRef.get('pinch').set({ enable: true });
       //
-
-
-
 
 
       var isStarted = false;
@@ -138,13 +129,7 @@ export class AkbariSideMenu extends React.Component {
         //   //alert(15)
         //   return; }
 
-
         //   console.log(e)
-
-
-
-
-
 
 
         this.sideRef.current.style.transitionDuration = '0s';
@@ -154,7 +139,6 @@ export class AkbariSideMenu extends React.Component {
         side_value = (x / sideWidth) * 100;
 
         // console.log(side_value)
-
 
 
         if (this.state.direction === 'rtl') {
@@ -183,15 +167,8 @@ export class AkbariSideMenu extends React.Component {
         if (e.isFinal) {
           realSide = side_value;
 
-
-
-
-
-
           this.isScrolling = false;
         }
-
-
 
       });
 
@@ -199,9 +176,6 @@ export class AkbariSideMenu extends React.Component {
       var currentScroll = 0;
       var currentScale = 1; //"fully zoomed out" state
       var lastScroll = 0;
-
-
-
 
       var pan_direction = "panright";
       if (this.state.direction === 'ltr') {
@@ -246,16 +220,12 @@ export class AkbariSideMenu extends React.Component {
     }, 100);
 
 
-
-
   }
 
 
   close_work(e) {
 
   }
-
-
 
 
   open() {
@@ -352,9 +322,8 @@ export class AkbariSideMenu extends React.Component {
           onClick={this.close.bind(this)}
         ></div>
 
-
       </React.Fragment>
     )
   }
 
-} 
+}
